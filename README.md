@@ -17,8 +17,11 @@ The test data is a list of 2,000 edges, and your task is to predict if each of t
 All data will be available in raw text. The training graph data will given in a (tab delimited) adjacency edge
 list format, where each row represents a node and its out neighbours (users being followed by that node). For
 example:
+
 1 2
+
 2 3
+
 4 3 5 1
 
 
@@ -26,9 +29,15 @@ The test edge set is in a (tab-delimited) edge list format also, where each repr
 not. Higher predictions correspond to being more confident that the edge is real.
 
 For example, given the test edge set of:
+
 3 1
+
 3 4
+
 if your prediction probabilities are 0.1 for edge (3,1) and 0.99 for edge (3,4) is true, then your output file should be as follows:
+
 Id,Predictions
+
 1,0.1
+
 2,0.99
