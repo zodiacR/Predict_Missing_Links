@@ -18,17 +18,22 @@ All data will be available in raw text. The training graph data will given in a 
 list format, where each row represents a node and its out neighbours (users being followed by that node). For
 example:
 1 2
+
 2 3
+
 4 3 5 1
+
 
 The test edge set is in a (tab-delimited) edge list format also, where each represents an edge (source node, target node). Given this 2,000-row edge list, your implemented algorithm should take the test list in and return a 2,001 row CSV file that has a) in the first row, the header string "Id,Predictions"; b) in all subsequent rows, an ID integer representing row number (1 through 2000), a comma, then a oat in the range [0,1]. These oats are your "guesses" or predictions as to whether the corresponding test edge was from the Twitter network or
 not. Higher predictions correspond to being more confident that the edge is real.
 
 For example, given the test edge set of:
 3 1
+
 3 4
 
 if your prediction probabilities are 0.1 for edge (3,1) and 0.99 for edge (3,4) is true, then your output file should be as follows:
 Id,Predictions
 1,0.1
+
 2,0.99
