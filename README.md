@@ -18,9 +18,7 @@ All data will be available in raw text. The training graph data will given in a 
 list format, where each row represents a node and its out neighbours (users being followed by that node). For
 example:
 1 2
-
 2 3
-
 4 3 5 1
 
 
@@ -29,11 +27,8 @@ not. Higher predictions correspond to being more confident that the edge is real
 
 For example, given the test edge set of:
 3 1
-
 3 4
-
 if your prediction probabilities are 0.1 for edge (3,1) and 0.99 for edge (3,4) is true, then your output file should be as follows:
 Id,Predictions
 1,0.1
-
 2,0.99
